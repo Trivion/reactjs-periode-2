@@ -1,0 +1,86 @@
+
+.square {
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(214, 61, 61);
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+  line-height: 80px;
+  height: 80px;
+  display: inline-block;
+    text-decoration: none;
+    color: rgb(90, 202, 80);
+    font-weight: bold;
+    background-color: #5cbe53;
+    margin: 10px;
+    border: 1px solid #1ce43d;
+    background-image: linear-gradient(bottom, rgb(180, 73, 171) 0%, rgb(203, 97, 194) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(180, 73, 157) 0%, rgb(203, 97, 176) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(180, 73, 157) 0%, rgb(199, 97, 203) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(180, 73, 144) 0%, rgb(203, 97, 176) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(77, 180, 73) 0%, rgb(101, 203, 97) 100%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(42, 90, 27)),
+        color-stop(1, rgb(25, 85, 10))
+    );
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 6px 0px #608f2b, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -moz-box-shadow: 0px 6px 0px #5b8f2b, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    box-shadow: 0px 6px 0px #2b8f38, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+ 
+ }
+ .square:active {
+  background-image: linear-gradient(bottom, rgb(98, 204, 88) 0%, rgb(0, 0, 0) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(204, 111, 88) 0%, rgb(197, 199, 90) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(88,154,204) 0%, rgb(199, 90, 181) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(204, 88, 169) 0%, rgb(199, 90, 184) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(204, 88, 179) 0%, rgb(199, 90, 163) 100%);
+ 
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, rgb(107, 204, 88)),
+      color-stop(1, rgb(90, 199, 117))
+  );
+ }
+ 
+ 
+ /* Board */
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+ }
+ /* Game */
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;  
+ }
+ /* Game Info */
+ul {
+  padding-left: 30px;
+ }
+ .game-info {
+  margin-left: 20px;
+ }
+ .status {
+  margin-bottom: 10px;
+ }
+ 
